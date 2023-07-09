@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: jx-aspnet-app-03
+    - name: jx-aspnet-app-04
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
