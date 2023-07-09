@@ -8,7 +8,6 @@ data:
     in_repo_config:
       enabled:
         hughexp/jx-aspnet-app-03: true
-        hughexp/jx-aspnet-app-04: true
         hughexp/jx3-minikube_home: true
     plank: {}
     pod_namespace: jx
@@ -22,7 +21,6 @@ data:
         skip-unknown-contexts: false
       merge_method:
         hughexp/jx-aspnet-app-03: merge
-        hughexp/jx-aspnet-app-04: merge
         hughexp/jx3-minikube_home: merge
       queries:
       - labels:
@@ -36,7 +34,6 @@ data:
         repos:
         - hughexp/jx3-minikube_home
         - hughexp/jx-aspnet-app-03
-        - hughexp/jx-aspnet-app-04
       - labels:
         - updatebot
         missingLabels:
@@ -48,7 +45,6 @@ data:
         repos:
         - hughexp/jx3-minikube_home
         - hughexp/jx-aspnet-app-03
-        - hughexp/jx-aspnet-app-04
       target_url: http://lighthouse-jx.192.168.49.2.nip.io/merge/status
 kind: ConfigMap
 metadata:
