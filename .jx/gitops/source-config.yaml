@@ -7,6 +7,8 @@ spec:
   - owner: hughexp
     provider: https://github.com
     providerKind: github
+    repositories:
+    - name: jx-aspnet-app-01
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
