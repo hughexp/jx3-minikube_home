@@ -1,0 +1,20 @@
+# Source: jx-aspnet-app-01/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: jx-aspnet-app-01
+  labels:
+    chart: "jx-aspnet-app-01-0.0.4"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'jx-aspnet-app-01'
+  namespace: jx-production
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+    name: http
+  selector:
+    app: jx-aspnet-app-01-jx-aspnet-app-01
