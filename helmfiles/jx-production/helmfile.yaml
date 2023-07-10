@@ -1,4 +1,8 @@
 filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
 namespace: jx-production
 repositories:
 - name: dev
@@ -7,5 +11,7 @@ releases:
 - chart: dev/jx-aspnet-app-01
   version: 0.0.4
   name: jx-aspnet-app-01
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
