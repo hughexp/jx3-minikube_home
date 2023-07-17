@@ -1,4 +1,8 @@
 filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
 namespace: jx-staging
 repositories:
 - name: dev

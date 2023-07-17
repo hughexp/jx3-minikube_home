@@ -5,18 +5,18 @@ metadata:
   labels:
     owner: hughexp
     provider: github
-    repository: jx-aspnet-app-01
+    repository: jx-aspnet-app001
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  name: hughexp-jx-aspnet-app-01
+  name: hughexp-jx-aspnet-app001
   namespace: jx
 spec:
-  httpCloneURL: https://github.com/hughexp/jx-aspnet-app-01.git
+  httpCloneURL: https://github.com/hughexp/jx-aspnet-app001.git
   org: hughexp
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: jx-aspnet-app-01
+  repo: jx-aspnet-app001
   scheduler:
     kind: ""
     name: in-repo
-  url: https://github.com/hughexp/jx-aspnet-app-01
+  url: https://github.com/hughexp/jx-aspnet-app001
