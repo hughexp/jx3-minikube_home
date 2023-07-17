@@ -30,7 +30,7 @@ jxRequirements:
     gitName: github
     gitServer: https://github.com
     provider: minikube
-    registry: docker-registry-jx.192.168.49.2.nip.io
+    registry: 10.104.245.237
   environments:
   - key: dev
     owner: hughexp
