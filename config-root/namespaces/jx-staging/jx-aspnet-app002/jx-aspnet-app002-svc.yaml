@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: jx-aspnet-app002
   labels:
-    chart: "jx-aspnet-app002-0.0.2"
+    chart: "jx-aspnet-app002-0.0.4"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'jx-aspnet-app002'
