@@ -5,18 +5,18 @@ metadata:
   labels:
     owner: hughexp
     provider: github
-    repository: jx-java-app01
+    repository: java-01
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  name: hughexp-jx-java-app01
+  name: hughexp-java-01
   namespace: jx
 spec:
-  httpCloneURL: https://github.com/hughexp/jx-java-app01.git
+  httpCloneURL: https://github.com/hughexp/java-01.git
   org: hughexp
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: jx-java-app01
+  repo: java-01
   scheduler:
     kind: ""
     name: in-repo
-  url: https://github.com/hughexp/jx-java-app01
+  url: https://github.com/hughexp/java-01
