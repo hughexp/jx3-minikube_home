@@ -7,7 +7,6 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
-        hughexp/java-01: true
         hughexp/jx-aspnet-app001: true
         hughexp/jx3-minikube_home: true
     plank: {}
@@ -21,7 +20,6 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
-        hughexp/java-01: merge
         hughexp/jx-aspnet-app001: merge
         hughexp/jx3-minikube_home: merge
       queries:
@@ -35,7 +33,6 @@ data:
         - needs-rebase
         repos:
         - hughexp/jx3-minikube_home
-        - hughexp/java-01
         - hughexp/jx-aspnet-app001
       - labels:
         - updatebot
@@ -47,7 +44,6 @@ data:
         - needs-rebase
         repos:
         - hughexp/jx3-minikube_home
-        - hughexp/java-01
         - hughexp/jx-aspnet-app001
       target_url: http://lighthouse-jx.192.168.49.2.nip.io/merge/status
 kind: ConfigMap
