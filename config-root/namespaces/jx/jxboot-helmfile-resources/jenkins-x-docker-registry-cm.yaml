@@ -11,4 +11,4 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
   kaniko.flags: "--insecure"
-  docker.registry: 10.104.245.237
+  docker.registry: hub-uat.mypaas.com
