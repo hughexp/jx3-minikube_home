@@ -11,5 +11,7 @@ releases:
 - chart: dev/python01
   version: 0.0.1
   name: python01
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}

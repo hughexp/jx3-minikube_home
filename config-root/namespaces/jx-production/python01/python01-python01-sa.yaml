@@ -1,0 +1,10 @@
+# Source: python01/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: python01-python01
+  annotations:
+    meta.helm.sh/release-name: 'python01'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
