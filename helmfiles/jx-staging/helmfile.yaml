@@ -11,5 +11,7 @@ releases:
 - chart: dev/jx-aspnet-app002
   version: 0.0.17
   name: jx-aspnet-app002
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
