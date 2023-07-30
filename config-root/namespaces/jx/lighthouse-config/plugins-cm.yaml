@@ -14,6 +14,10 @@ data:
       repos:
       - hughexp/jx-aspnet-app002
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - hughexp/jx-java-app01
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -30,6 +34,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       hughexp/jx-aspnet-app002:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      hughexp/jx-java-app01:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -59,6 +68,20 @@ data:
       - dog
       - pony
       hughexp/jx-aspnet-app002:
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
+      hughexp/jx-java-app01:
       - approve
       - assign
       - help
@@ -104,6 +127,9 @@ data:
       trusted_org: hughexp
     - repos:
       - hughexp/jx-aspnet-app002
+      trusted_org: hughexp
+    - repos:
+      - hughexp/jx-java-app01
       trusted_org: hughexp
     welcome:
     - message_template: Welcome
