@@ -6,6 +6,10 @@ data:
       repos:
       - hughexp/jx3-minikube_home
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - hughexp/python01
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -21,6 +25,11 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
+      hughexp/python01:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
     heart: {}
     label:
       additional_labels: null
@@ -28,6 +37,20 @@ data:
     plugins:
       hughexp/jx3-minikube_home:
       - config-updater
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
+      hughexp/python01:
       - approve
       - assign
       - help
@@ -53,6 +76,11 @@ data:
     - repos:
       - hughexp/jx3-minikube_home
       trusted_org: hughexp
+    - repos:
+      - hughexp/python01
+      trusted_org: hughexp
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

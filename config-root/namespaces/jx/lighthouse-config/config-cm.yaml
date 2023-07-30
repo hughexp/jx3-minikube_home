@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         hughexp/jx3-minikube_home: true
+        hughexp/python01: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         hughexp/jx3-minikube_home: merge
+        hughexp/python01: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - hughexp/jx3-minikube_home
+        - hughexp/python01
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - hughexp/jx3-minikube_home
+        - hughexp/python01
       target_url: http://lighthouse-jx.192.168.49.2.nip.io/merge/status
 kind: ConfigMap
 metadata:
