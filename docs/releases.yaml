@@ -136,5 +136,43 @@
     version: 0.5.0
 - namespace: jx-production
   path: helmfiles/jx-production/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    appVersion: 0.0.3
+    applicationUrl: http://jx-aspnet-app002-jx-production.192.168.49.2.nip.io
+    description: A Helm chart for Kubernetes
+    firstDeployed: "2023-07-17T17:04:16Z"
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    ingresses:
+    - name: jx-aspnet-app002
+      url: http://jx-aspnet-app002-jx-production.192.168.49.2.nip.io
+    lastDeployed: "2023-07-17T17:43:51Z"
+    name: jx-aspnet-app002
+    releaseName: jx-aspnet-app002
+    repositoryName: dev
+    repositoryUrl: http://bucketrepo-jx.192.168.49.2.nip.io/bucketrepo/charts/
+    resourcePath: config-root/namespaces/jx-production/jx-aspnet-app002
+    sources:
+    - https://github.com/hughexp/jx-aspnet-app002.git
+    version: 0.0.3
 - namespace: jx-staging
   path: helmfiles/jx-staging/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    appVersion: 0.0.4
+    applicationUrl: http://jx-aspnet-app002-jx-staging.192.168.49.2.nip.io
+    description: A Helm chart for Kubernetes
+    firstDeployed: "2023-07-17T17:35:05Z"
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    ingresses:
+    - name: jx-aspnet-app002
+      url: http://jx-aspnet-app002-jx-staging.192.168.49.2.nip.io
+    lastDeployed: "2023-07-17T18:07:35Z"
+    name: jx-aspnet-app002
+    releaseName: jx-aspnet-app002
+    repositoryName: dev
+    repositoryUrl: http://bucketrepo-jx.192.168.49.2.nip.io/bucketrepo/charts/
+    resourcePath: config-root/namespaces/jx-staging/jx-aspnet-app002
+    sources:
+    - https://github.com/hughexp/jx-aspnet-app002.git
+    version: 0.0.4

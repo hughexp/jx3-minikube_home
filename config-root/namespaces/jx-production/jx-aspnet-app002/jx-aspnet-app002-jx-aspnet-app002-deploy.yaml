@@ -1,35 +1,35 @@
-# Source: jx-aspnet-app-01/templates/deployment.yaml
+# Source: jx-aspnet-app002/templates/deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jx-aspnet-app-01-jx-aspnet-app-01
+  name: jx-aspnet-app002-jx-aspnet-app002
   labels:
     draft: draft-app
-    chart: "jx-aspnet-app-01-0.0.4"
+    chart: "jx-aspnet-app002-0.0.3"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    meta.helm.sh/release-name: 'jx-aspnet-app-01'
+    meta.helm.sh/release-name: 'jx-aspnet-app002'
     wave.pusher.com/update-on-config-change: 'true'
   namespace: jx-production
 spec:
   selector:
     matchLabels:
-      app: jx-aspnet-app-01-jx-aspnet-app-01
+      app: jx-aspnet-app002-jx-aspnet-app002
   replicas: 1
   template:
     metadata:
       labels:
         draft: draft-app
-        app: jx-aspnet-app-01-jx-aspnet-app-01
+        app: jx-aspnet-app002-jx-aspnet-app002
     spec:
-      serviceAccountName: jx-aspnet-app-01-jx-aspnet-app-01
+      serviceAccountName: jx-aspnet-app002-jx-aspnet-app002
       containers:
-      - name: jx-aspnet-app-01
-        image: "10.104.245.237/hughexp/jx-aspnet-app-01:0.0.4"
+      - name: jx-aspnet-app002
+        image: "10.104.245.237/hughexp/jx-aspnet-app002:0.0.3"
         imagePullPolicy: IfNotPresent
         env:
         - name: VERSION
-          value: 0.0.4
+          value: 0.0.3
         envFrom: null
         ports:
         - name: http

@@ -1,10 +1,10 @@
-# Source: jx-aspnet-app-01/templates/sa.yaml
+# Source: jx-aspnet-app002/templates/sa.yaml
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: jx-aspnet-app-01-jx-aspnet-app-01
+  name: jx-aspnet-app002-jx-aspnet-app002
   annotations:
-    meta.helm.sh/release-name: 'jx-aspnet-app-01'
+    meta.helm.sh/release-name: 'jx-aspnet-app002'
   namespace: jx-production
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

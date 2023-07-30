@@ -1,13 +1,13 @@
-# Source: jx-aspnet-app-01/templates/service.yaml
+# Source: jx-aspnet-app002/templates/service.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: jx-aspnet-app-01
+  name: jx-aspnet-app002
   labels:
-    chart: "jx-aspnet-app-01-0.0.4"
+    chart: "jx-aspnet-app002-0.0.3"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    meta.helm.sh/release-name: 'jx-aspnet-app-01'
+    meta.helm.sh/release-name: 'jx-aspnet-app002'
   namespace: jx-production
 spec:
   type: ClusterIP
@@ -17,4 +17,4 @@ spec:
     protocol: TCP
     name: http
   selector:
-    app: jx-aspnet-app-01-jx-aspnet-app-01
+    app: jx-aspnet-app002-jx-aspnet-app002
