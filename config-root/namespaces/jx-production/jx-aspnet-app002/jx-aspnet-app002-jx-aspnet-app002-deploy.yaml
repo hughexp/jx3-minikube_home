@@ -5,7 +5,7 @@ metadata:
   name: jx-aspnet-app002-jx-aspnet-app002
   labels:
     draft: draft-app
-    chart: "jx-aspnet-app002-0.0.14"
+    chart: "jx-aspnet-app002-0.0.17"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'jx-aspnet-app002'
@@ -25,11 +25,11 @@ spec:
       serviceAccountName: jx-aspnet-app002-jx-aspnet-app002
       containers:
       - name: jx-aspnet-app002
-        image: "hub-uat.mypaas.com/hughexp/jx-aspnet-app002:0.0.14"
+        image: "hub-uat.mypaas.com/hughexp/jx-aspnet-app002:0.0.17"
         imagePullPolicy: IfNotPresent
         env:
         - name: VERSION
-          value: 0.0.14
+          value: 0.0.17
         envFrom: null
         ports:
         - name: http
