@@ -1,0 +1,22 @@
+# Source: jx-aspnet-app002/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    meta.helm.sh/release-name: 'jx-aspnet-app002'
+  name: jx-aspnet-app002
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+  - http:
+      paths:
+      - pathType: ImplementationSpecific
+        backend:
+          service:
+            name: jx-aspnet-app002
+            port:
+              number: 80
+    host: jx-aspnet-app002-jx-production.192.168.49.2.nip.io
