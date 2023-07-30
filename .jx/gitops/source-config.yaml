@@ -7,8 +7,6 @@ spec:
   - owner: hughexp
     provider: https://github.com
     providerKind: github
-    repositories:
-    - name: java-02
     - name: python01
     scheduler: in-repo
   slack:
