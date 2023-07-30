@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: java-01
+    - name: java-02
     - name: jx-aspnet-app001
     scheduler: in-repo
   slack:
