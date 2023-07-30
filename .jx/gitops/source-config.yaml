@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: java-01
     - name: jx-aspnet-app001
     - name: jx-java-app01
     scheduler: in-repo
