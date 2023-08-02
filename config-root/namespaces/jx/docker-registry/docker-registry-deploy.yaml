@@ -27,7 +27,7 @@ spec:
         release: docker-registry
       annotations:
         checksum/config: 8c9a66051bfb62d554d483693a0c083c845d1fb7a6a4cfad4e244df134eb7bdc
-        checksum/secret: 6c2628df89bf96cf18f59fe4dca8f4dc743e58cacdd65a674831b354a3fb934d
+        checksum/secret: 9e928cccbf77de52a1c35bc94f77bb48d0ef8de241f31a103df8e730e14a519d
     spec:
       securityContext:
         fsGroup: 1000
@@ -69,5 +69,4 @@ spec:
         configMap:
           name: docker-registry-config
       - name: data
-        hostPath: 
-          path: /jx_data/registry
+        emptyDir: {}
