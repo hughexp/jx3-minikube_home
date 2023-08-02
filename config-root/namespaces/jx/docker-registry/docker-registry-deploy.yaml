@@ -69,4 +69,5 @@ spec:
         configMap:
           name: docker-registry-config
       - name: data
-        emptyDir: {}
+        hostPath: 
+          path: /jx_data/registry
