@@ -5,3 +5,7 @@ ingress:
   enabled: true
   hosts:
   - docker-registry{{ .Values.jxRequirements.ingress.namespaceSubDomain }}{{ .Values.jxRequirements.ingress.domain | default "cluster.local" }}
+
+persistence
+  enabled： true
+  existingClaim: docker-registry-persistent-volume-claim
