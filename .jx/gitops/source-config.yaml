@@ -8,7 +8,6 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
-    - name: python01
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
