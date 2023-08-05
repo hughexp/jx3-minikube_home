@@ -65,6 +65,13 @@
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-build-controller'>source</a></td>
 	    </tr>
     <tr>
+	      <td>charts</td>
+	      <td title=''> charts/docker-registry-storage</td>
+	      <td></td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
 		      <td colspan='5'><h3>tekton-pipelines</h3></td>
 		    </tr>
 	    <tr>

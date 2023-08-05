@@ -65,5 +65,8 @@ releases:
   values:
   - jx-values.yaml
 - chart: ./charts/docker-registry-storage
+  name: charts
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}

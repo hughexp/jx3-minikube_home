@@ -118,6 +118,9 @@
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
     version: 0.4.8
+  - name: charts/docker-registry-storage
+    releaseName: charts
+    repositoryName: .
 - namespace: tekton-pipelines
   path: helmfiles/tekton-pipelines/helmfile.yaml
   releases:
