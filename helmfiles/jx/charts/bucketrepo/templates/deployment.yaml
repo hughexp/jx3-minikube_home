@@ -78,6 +78,6 @@ spec:
       - name: config
         secret:
           secretName: bucketrepo-config
-      - name: 
+      - name: data
         hostPath:
         path: /jx_data/bucketrepo
