@@ -80,4 +80,4 @@ spec:
           secretName: bucketrepo-config
       - name: data
         hostPath:
-        path: /jx_data/bucketrepo
+          path: /jx_data/bucketrepo
