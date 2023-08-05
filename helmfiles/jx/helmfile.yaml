@@ -42,7 +42,7 @@ releases:
   values:
   - ../../versionStream/charts/jxgh/lighthouse/values.yaml.gotmpl
   - jx-values.yaml
-- chart: jxgh/bucketrepo
+- chart: ./charts//bucketrepo
   version: 0.1.67
   name: bucketrepo
   values:
@@ -65,7 +65,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: ./charts/docker-registry-storage
-  name: charts
+  name: docker-registry-storag
   values:
   - jx-values.yaml
 templates: {}
