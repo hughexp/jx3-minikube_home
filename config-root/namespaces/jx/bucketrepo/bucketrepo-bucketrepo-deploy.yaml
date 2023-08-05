@@ -54,6 +54,8 @@ spec:
         - name: config
           mountPath: /config
           readOnly: true
+        - name: data
+          mountPath: /jx_data
         resources:
           limits:
             cpu: 100m
@@ -69,3 +71,6 @@ spec:
       - name: config
         secret:
           secretName: bucketrepo-config
+      - name: data
+        hostPath:
+          path: /jx_data/bucketrepo
