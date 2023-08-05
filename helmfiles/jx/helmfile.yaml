@@ -64,6 +64,6 @@ releases:
   name: local-external-secrets
   values:
   - jx-values.yaml
-- chart: ./charts/docker-registry-storage
+- chart: ../../charts/docker-registry-storage
 templates: {}
 renderedvalues: {}
