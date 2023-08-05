@@ -4,7 +4,7 @@ apiVersion: v1
 metadata:
   name: docker-registry-persistent-volume-claim
   annotations:
-    meta.helm.sh/release-name: 'charts'
+    meta.helm.sh/release-name: 'docker-registry-storag'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

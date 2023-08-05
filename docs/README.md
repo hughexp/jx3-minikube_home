@@ -45,7 +45,7 @@
 	    </tr>
     <tr>
 	      <td>bucketrepo</td>
-	      <td title='A Helm chart for bucketrepo service'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/go.png' width='24px' height='24px'> bucketrepo</td>
+	      <td title=''> charts//bucketrepo</td>
 	      <td>0.1.67</td>
 	      <td></td>
 	      <td></td>
@@ -65,7 +65,7 @@
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-build-controller'>source</a></td>
 	    </tr>
     <tr>
-	      <td>charts</td>
+	      <td>docker-registry-storag</td>
 	      <td title=''> charts/docker-registry-storage</td>
 	      <td></td>
 	      <td></td>

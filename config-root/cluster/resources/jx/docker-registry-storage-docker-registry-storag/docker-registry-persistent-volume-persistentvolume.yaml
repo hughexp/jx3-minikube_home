@@ -7,7 +7,7 @@ metadata:
     type: local
     gitops.jenkins-x.io/pipeline: 'cluster'
   annotations:
-    meta.helm.sh/release-name: 'charts'
+    meta.helm.sh/release-name: 'docker-registry-storag'
 spec:
   storageClassName: docker-registry-local
   capacity:
