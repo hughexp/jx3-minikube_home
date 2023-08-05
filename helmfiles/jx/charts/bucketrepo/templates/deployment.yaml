@@ -64,6 +64,8 @@ spec:
         - name: config
           mountPath: {{ .Values.config.path }}
           readOnly: true
+        - name: data
+          mountPath: /jx_data
         resources:
 {{ toYaml .Values.resources | indent 12 }}
       securityContext:
@@ -76,3 +78,6 @@ spec:
       - name: config
         secret:
           secretName: bucketrepo-config
+      - name: 
+        hostPath:
+        path: /jx_data/bucketrepo
