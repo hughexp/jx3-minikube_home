@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: aspnet-app-0901
     - name: python01
     scheduler: in-repo
   slack:
